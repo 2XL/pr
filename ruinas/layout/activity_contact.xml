@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="@string/contactName" >
+
+    <QuickContactBadge
+        android:id="@+id/quickContactBadge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contactPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="addContactButton"
+        android:text="@string/addContactButton" />
+
+    <EditText
+        android:id="@+id/contactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contactPhone"
+        android:layout_toRightOf="@+id/quickContactBadge1"
+        android:ems="10"
+        android:hint="textPersonName"
+        android:minWidth="200sp"
+        android:scrollbarAlwaysDrawVerticalTrack="@bool/multilinetextEditable"
+        android:text="@string/contactName" />
+
+    <EditText
+        android:id="@+id/contactPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactName"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="phone"
+        android:minWidth="200sp"
+        android:text="@string/contactPhone" />
+
+</RelativeLayout> 

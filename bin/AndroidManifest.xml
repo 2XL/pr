@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pcrigger.thelastemperior"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.pcrigger.thelastemperior.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.StartingPoint"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pcrigger.thelastemperior.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pcrigger.thelastemperior.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.TextPlay"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Email"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Accelerate"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Flipper"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.GFX"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.SharedPrefs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.InternalData"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.WeatherXMLParsing"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.SimpleBrowser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.HttpExample"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.ExternalData"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.GFXSurface"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Camera"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Data"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.OpenedClass"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.SendMsg"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.AddUser"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.SoundStuff"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Slider"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.GLExample"
+            android:label="@string/app_name" >
+        </activity>
+        <!--
+        <receiver
+            android:name="com.pcrigger.widget.PointlessWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+
+                <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_stuff" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name="com.pcrigger.thelastemperior.SQLView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.pcrigger.thelastemperior.SQLVIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.SQLiteExample"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Tabs"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.AboutUs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.pcrigger.thelastemperior.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pcrigger.thelastemperior.Prefs"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.pcrigger.thelastemperior.PREFS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
